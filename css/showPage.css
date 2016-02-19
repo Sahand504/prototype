@@ -1,0 +1,40 @@
+@media print
+{    
+    #no-print, #no-print *
+    {
+        display: none !important;
+    }
+}
+
+
+h1 {
+	right:10px;
+	font-family:adobe arabic;
+	font-size:30px;
+	padding-top:0px;
+	padding-bottom:0px;
+	direction:rtl;
+}
+
+#license {
+	position:absolute;
+	top:80px;
+	right:10px;
+	font-family:adobe arabic;
+	font-size:30px;
+	color:#fb5e08;
+	padding-top:0px;
+	padding-bottom:0px;
+	direction:rtl;
+}
+
+#comments {
+	position:absolute;
+	top:80px;
+	right:10px;
+	font-family:adobe arabic;
+	font-size:30px;
+	padding-top:0px;
+	padding-bottom:0px;
+	direction:rtl;
+}

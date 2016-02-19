@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+  <head>	
+	<meta charset="UTF-8">
+	<title>Request License</title>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Login CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- input CSS -->
+	<link rel="stylesheet" href="css/stylesheet-pure-css.css">
+
+	<!-- W3 CSS -->
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	
+  </head>
+
+  <body>
+
+	<form class="form"  role="form">
+
+		<h1 style="text-align:center; margin-top:-20px; "> درخواست مجوزها </h1>
+		<br>
+
+		<!-- <button type="button" id="sign-out-button" class="btn btn-default btn-sm" onclick="location.href='Chamber_of_Commerce.html';"><span class="glyphicon glyphicon-step-backward"></span> بازگشت </button>
+		<button type="button" id="sign-out-button" class="btn btn-default btn-sm" onclick="location.href='LoginPage.html';" style="float:right"><span class="glyphicon glyphicon-log-out"></span> خروج </button> -->
+		
+		<input type="text" id="goods-name" placeholder=" نام کالا ">
+		<input type="text" id="goods-company" placeholder=" شرکت تولید کننده کالا ">
+		<input type="text" id="weight" placeholder=" وزن کالا ">
+		<input type="text" id="num" placeholder=" تعداد کالا ">
+		<input type="text" id="price" placeholder=" قیمت کالا ">
+		<input type="text" id="date" placeholder="تاریخ اظهار">
+		<input type="text" id="origin-country" placeholder="کشور مبدأ">
+		
+		<div style="text-align: center;">
+			<button type="button" id="req-button"> ثبت </button>
+		</div>
+
+		<h2 id="acc" style="text-align:center; color:green; display: none;"> مجوز داده شد </h2>
+
+		<button type="button" class="my-btn" id="back-button" onclick=" location.href='Chamber_of_Commerce.html' ;" style="width:150px;" >بازگشت</button>
+		<button type="button" class="my-btn" id="exit-button" onclick=" location.href='LoginPage.html' ;" style="width:150px;" >خروج</button>
+		
+	</form>
+
+
+	
+	<div class="wrapper">
+	<div class="container">
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	</div>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	<!-- My script -->
+	<script src="js/RequestLicense.js"></script>
+	
+  </body>
+</html>

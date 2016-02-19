@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+	<head>
+	<meta charset="UTF-8">
+	<title>Show Page</title>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/showPage.css">
+	
+	</head>
+
+	<body>
+	<br>
+	<div>
+		<h1 style="margin-right:100px; font-size:40px;">اظهارنامه شماره 03593</h1>
+
+		<h1 style="text-align:center;"> مجوزهای مورد نیاز</h1>
+		<ul id="license" style="text-align:right; margin-top: 60px; margin-right:50px;">
+			<li>مجوز شماره 1 : مجوز سلامت کالاهای بهداشتی متفرقه </li>
+			<li>مجوز شماره 2 : مجوز واردات خودروی خارجی </li>
+			<li>مجوز شماره 3 : جوز واردات کالای لوکس </li>
+			<li>مجوز شماره 4 : مجوز سلامت فیزیکی کالاها </li>
+			<li>مجوز شماره 5 : مجوز عدم مغایرت با اهداف اقتصاد مقاومتی </li>
+		</ul>
+	</div>
+
+	<div id="comments" style="margin-top:260px;">
+		<h1 style="text-align:center;"> توضیحات </h1>
+
+		<ul style="text-align:right; margin-right:50px;">
+			<li> مجوز سلامت کالاهای بهداشتی متفرقه : به مدت یکسال از تاریخ صدور و به سقف مبلغ 10 میلیون دلار از کشور چین می تواند از این مجوز استفاده کند. </li>
+			<li> مجوز واردات خودروی خارجی : به مدت یکسال از تاریخ صدور و به سقف 50 میلیون دلار از شرکت های کیا و تویوتا می تواند از این مجوز استفاده کند. </li>
+			<li> مجوز واردات کالای لوکس : تا پایان سال 1396 واردات کالاهای با وزن واحد کمتر از 50 کیلوگرم و قیمت واحد تا 1 میلیون دلار می تواند از این مجوز استفاده کند. </li>
+		</ul>
+	</div>
+
+	<!-- <button style="margin-left:660px; margin-top:420px;" onclick="Print()">پرینت</button> -->
+	<button type="button" class="btn btn-default btn-sm" id="no-print" onclick="Print()" style="margin-left:660px; margin-top:420px;">
+		<span class="glyphicon glyphicon-print"></span> پرینت
+	</button>
+	
+	<script>
+	function Print() {
+		window.print();
+	}
+	</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+	<head>
+	<meta charset="UTF-8">
+	<title>Show Page</title>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/ShowTrackingCode.css">
+	
+	</head>
+
+	<body>
+	<br>
+	<div>
+		<h1 style="font-size:40px; text-align:center;">کدهای رهگیری</h1>
+
+
+		<div id="license" style="text-align:center; margin-top: 30px; margin-right:50px;">
+			<br> 
+			<p>کد رهگیری شماره 1 : 0123456789 </p>
+			<p>کد رهگیری شماره 2 : 1234567890 </p>
+			<p>کد رهگیری شماره 3 : 2345678901 </p>
+			<p>کد رهگیری شماره 4 : 3456789012 </p>
+			<p>کد رهگیری شماره 5 : 4567890123 </p>
+		</div>
+	</div>
+
+	<!-- <button style="margin-left:660px; margin-top:420px;" onclick="Print()">پرینت</button> -->
+	<button type="button" class="btn btn-default btn-sm" id="no-print" onclick="Print()" style="margin-left:660px; margin-top:420px;">
+		<span class="glyphicon glyphicon-print"></span> پرینت
+	</button>
+	
+	<script>
+	function Print() {
+		window.print();
+	}
+	</script>
+
+	</body>
+
+</html>
