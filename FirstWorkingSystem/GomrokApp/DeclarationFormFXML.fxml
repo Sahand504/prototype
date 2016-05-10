@@ -10,14 +10,17 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8.0.25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GomrokApp.Main">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GomrokApp.Main">
    <children>
-      <Label layoutX="186.0" layoutY="14.0" text="اطلاعات اظهارنامه">
+      <Label layoutX="186.0" layoutY="24.0" text="اطلاعات اظهارنامه">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="wayChoiceBox" layoutX="180.0" layoutY="79.0" prefWidth="150.0">
+            <TextField fx:id="merchantFirst" alignment="CENTER_RIGHT" layoutX="181.0" layoutY="85.0" promptText="نام تاجر" />
+      <TextField fx:id="merchantLast" alignment="CENTER_RIGHT" layoutX="179.0" layoutY="124.0" promptText="نام خانوادگی تاجر" />
+      <TextField fx:id="merchantID" alignment="CENTER_RIGHT" layoutX="179.0" layoutY="163.0" promptText="شماره شناسه ملی تاجر" />
+      <ChoiceBox fx:id="wayChoiceBox" layoutX="178.0" layoutY="205.0" prefWidth="150.0">
 		 <items>
 	      	 <FXCollections fx:factory="observableArrayList">
       	 		<String fx:value="زمینی" />
@@ -26,9 +29,9 @@
       	 	</FXCollections>
       	 </items>
       </ChoiceBox>
-      <TextField fx:id="originCountryTextField" alignment="CENTER_RIGHT" layoutX="180.0" layoutY="121.0" prefHeight="25.0" prefWidth="150.0" promptText="کشور مبدا" />
-      <TextField fx:id="productNumTextField" alignment="CENTER_RIGHT" layoutX="181.0" layoutY="159.0" promptText="تعداد کالا به عدد" />
-      <DatePicker fx:id="dateStartedDatePicker" layoutX="180.0" layoutY="200.0" prefHeight="25.0" prefWidth="150.0" promptText="تاریخ اظهار" />
-      <Button id="nextButton" fx:id="nextButton" layoutX="179.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleNextButtonAction" prefHeight="25.0" prefWidth="149.0" text="مرحله بعد" />
+      <TextField fx:id="originCountryTextField" alignment="CENTER_RIGHT" layoutX="178.0" layoutY="244.0" prefHeight="25.0" prefWidth="150.0" promptText="کشور مبدا" />
+      <TextField fx:id="productNumTextField" alignment="CENTER_RIGHT" layoutX="179.0" layoutY="284.0" promptText="تعداد کالا به عدد" />
+      <DatePicker fx:id="dateStartedDatePicker" layoutX="178.0" layoutY="324.0" prefHeight="25.0" prefWidth="150.0" promptText="تاریخ اظهار" />
+      <Button id="nextButton" fx:id="nextButton" layoutX="181.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleNextButtonAction" prefHeight="25.0" prefWidth="149.0" text="مرحله بعد" />
    </children>
 </Pane>

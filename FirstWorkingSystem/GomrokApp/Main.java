@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import javaClasses.Declaration;
+import javaClasses.Merchant;
 import javaClasses.Product;
 import javaClasses.User;
 import javafx.application.Application;
@@ -27,6 +28,12 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+	@FXML
+	private TextField merchantFirst;
+	@FXML
+	private TextField merchantLast;
+	@FXML 
+	private TextField merchantID;
 	@FXML
 	private Pane pane;
 	@FXML
@@ -74,8 +81,11 @@ public class Main extends Application {
 				way = "Not selected";
 				break;
 		}
+		// if new merchant
+		Merchant m = new Merchant(this.merchantFirst.getText(),
+				this.merchantLast.getText(), this.merchantID.getText());
 		Declaration d = new Declaration(this.ID, way, this.originCountryTextField.getText(),
-				this.dateStartedDatePicker.getValue().toString());
+				this.dateStartedDatePicker.getValue().toString(), m);
 		productNum = Long.parseLong(productNumTextField.getText());
 //		this.declarations.add(d);
 		this.ID++;
@@ -116,6 +126,7 @@ public class Main extends Application {
 	public void showDeclarations() {
 		for(Declaration d: this.declarations) {
 			System.out.println("ID: " + d.getID());
+			System.out.println("Merchant ID :" + d.getMerchant().getNationalID());
 			System.out.println("Way: " + d.getWay());
 			System.out.println("Origin country: " + d.getOriginCountry());
 			System.out.println("Started date: " + d.getStartedDate());
