@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="laws.LawsController">
+   <children>
+      <Label layoutX="113.0" layoutY="14.0" text="Create Law">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productTypeTF" layoutX="83.0" layoutY="57.0" promptText="Product type" />
+      <TextField fx:id="productNameTF" layoutX="83.0" layoutY="91.0" promptText="Product name" />
+      <TextField fx:id="manufacturerTF" layoutX="83.0" layoutY="124.0" promptText="Manufacturer" />
+      <TextField fx:id="producingCountryTF" layoutX="83.0" layoutY="158.0" promptText="Producing Country" />
+      <TextField fx:id="minPriceTF" layoutX="83.0" layoutY="193.0" promptText="Minimum price" />
+      <TextField fx:id="maxPriceTF" layoutX="83.0" layoutY="228.0" promptText="Maximum price" />
+      <TextField fx:id="minNumberTF" layoutX="83.0" layoutY="263.0" promptText="Minimum number" />
+      <TextField fx:id="maxNumberTF" layoutX="83.0" layoutY="298.0" promptText="Maximum Number" />
+      <TextField fx:id="minWeightTF" layoutX="83.0" layoutY="331.0" promptText="Minimum weight" />
+      <TextField fx:id="maxWeightTF" layoutX="83.0" layoutY="366.0" prefHeight="25.0" prefWidth="149.0" promptText="Maximum weight" />
+      <DatePicker fx:id="dateFromDP" layoutX="83.0" layoutY="402.0" prefHeight="25.0" prefWidth="149.0" promptText="From" />
+      <DatePicker fx:id="dateTillDP" layoutX="83.0" layoutY="437.0" prefHeight="25.0" prefWidth="149.0" promptText="Till" />
+      <Button fx:id="createLawBtn" layoutX="83.0" layoutY="484.0" mnemonicParsing="false" onAction="#createLawBtnClicked" prefHeight="25.0" prefWidth="149.0" text="Create Law" />
+   </children>
+</AnchorPane>
