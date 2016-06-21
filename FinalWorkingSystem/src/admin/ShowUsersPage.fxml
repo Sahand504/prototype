@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.ShowUsersController">
+   <children>
+      <TableView fx:id="userTable" layoutX="37.0" layoutY="57.0" prefHeight="374.0" prefWidth="426.0">
+        <columns>
+          <TableColumn fx:id="usernameCol" prefWidth="107.0" text="Username" />
+          <TableColumn fx:id="passwordCol" minWidth="0.0" prefWidth="102.0" text="Password" />
+            <TableColumn fx:id="typeCol" prefWidth="107.0" text="Type" />
+            <TableColumn fx:id="ministryCol" prefWidth="109.0" text="Ministry" />
+        </columns>
+      </TableView>
+      <Label layoutX="260.0" layoutY="14.0" text="Show Users">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="editBtn" layoutX="482.0" layoutY="82.0" mnemonicParsing="false" onAction="#editBtnClicked" prefHeight="30.0" prefWidth="111.0" text="Edit User">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteBtn" layoutX="482.0" layoutY="120.0" mnemonicParsing="false" onAction="#deleteBtnClicked" prefHeight="30.0" prefWidth="111.0" text="Delete User">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeclarationBtn" layoutX="482.0" layoutY="317.0" mnemonicParsing="false" onAction="#DeclarationBtnClicked" prefHeight="30.0" prefWidth="111.0" text="Declarations">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="482.0" layoutY="354.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="111.0" text="Permits">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="482.0" layoutY="392.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="111.0" text="Laws">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

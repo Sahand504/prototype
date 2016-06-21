@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="266.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customsOfficer.customsOfficerController">
+   <children>
+      <Label layoutX="71.0" layoutY="14.0" text="Customs Officer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="createDeclarationBtn" layoutX="41.0" layoutY="53.0" mnemonicParsing="false" onAction="#createDeclarationBtnClicked" prefHeight="27.0" prefWidth="193.0" text="Create Declaration" />
+      <Button fx:id="confrimDeclarationBtn" layoutX="41.0" layoutY="91.0" mnemonicParsing="false" onAction="#confrimDeclarationBtn" prefHeight="27.0" prefWidth="193.0" text="Confirm Declaration" />
+      <Button fx:id="showDeclarationsBtn" layoutX="41.0" layoutY="128.0" mnemonicParsing="false" onAction="#showDeclarationsBtnClicked" prefHeight="27.0" prefWidth="193.0" text="Show Declarations" />
+   </children>
+</AnchorPane>

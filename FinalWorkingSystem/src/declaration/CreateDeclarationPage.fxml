@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="254.0" xmlns="http://javafx.com/javafx/8.0.25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="declaration.CreateDeclarationController">
+   <children>
+      <Label layoutX="57.0" layoutY="14.0" text="Create Declaration">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+            <TextField fx:id="merchantFirstTF" layoutX="53.0" layoutY="62.0" promptText="Merchant firstname" />
+      <TextField fx:id="merchantLastTF" layoutX="53.0" layoutY="95.0" promptText="Merchant lastname" />
+      <TextField fx:id="merchantIDTF" layoutX="53.0" layoutY="129.0" promptText="Merchant ID" />
+      <ChoiceBox fx:id="wayCB" layoutX="53.0" layoutY="161.0" prefWidth="150.0">
+		 <items>
+	      	 <FXCollections fx:factory="observableArrayList">
+      	 		<String fx:value="Overland" />
+      	 		<String fx:value="Airway" />
+      	 		<String fx:value="Seaway" />
+      	 	</FXCollections>
+      	 </items>
+      </ChoiceBox>
+      <TextField fx:id="originCountryTF" layoutX="52.0" layoutY="197.0" prefHeight="25.0" prefWidth="150.0" promptText="Origin country" />
+      <TextField fx:id="productNumTF" layoutX="53.0" layoutY="230.0" promptText="Number of products" />
+      <DatePicker fx:id="dateStartedDP" disable="true" layoutX="52.0" layoutY="264.0" prefHeight="25.0" prefWidth="150.0" promptText="Date" />
+      <Button id="nextButton" fx:id="nextBtn" layoutX="53.0" layoutY="302.0" mnemonicParsing="false" onAction="#nextButtonClicked" prefHeight="25.0" prefWidth="149.0" text="Next" />
+   </children>
+</Pane>

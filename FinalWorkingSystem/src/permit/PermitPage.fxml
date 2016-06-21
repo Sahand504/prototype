@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8.0.25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="permit.PermitController">
+   <children>
+      <Label layoutX="157.0" layoutY="14.0" text="Issuing Permit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="merchantIDTF" layoutX="20.0" layoutY="57.0" promptText="Merchant ID" />
+      <TextField fx:id="productTypeTF" layoutX="21.0" layoutY="100.0" promptText="Product type" />
+      <TextField fx:id="productNameTF" layoutX="21.0" layoutY="132.0" promptText="Product name" />
+      <TextField fx:id="manufacturerTF" layoutX="21.0" layoutY="163.0" promptText="Manufacturer" />
+      <TextField fx:id="producingCountryTF" layoutX="21.0" layoutY="194.0" promptText="Producing Country" />
+      <TextField fx:id="maxPriceTF" layoutX="242.0" layoutY="100.0" promptText="Maximum price" />
+      <TextField fx:id="maxNumberTF" layoutX="242.0" layoutY="132.0" promptText="Maximum Number" />
+      <TextField fx:id="maxWeightTF" layoutX="242.0" layoutY="163.0" prefHeight="25.0" prefWidth="149.0" promptText="Maximum weight" />
+      <DatePicker fx:id="dateTillDP" layoutX="242.0" layoutY="194.0" prefHeight="25.0" prefWidth="149.0" promptText="Till" />
+      <Button fx:id="givingPermitBtn" layoutX="131.0" layoutY="240.0" mnemonicParsing="false" onAction="#givingPermitBtnClicked" prefHeight="25.0" prefWidth="149.0" text="Giving Permit" />
+   </children>
+</AnchorPane>

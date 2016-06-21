@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/8.0.25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="laws.LawsController">
+   <children>
+      <Label layoutX="188.0" layoutY="14.0" text="Create Law">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="permitNameTF" layoutX="55.0" layoutY="59.0" prefHeight="25.0" prefWidth="149.0" promptText="Permit name" />
+      <ChoiceBox fx:id="ministryCB" layoutX="260.0" layoutY="59.0" prefWidth="150.0">
+      	<items>
+	      	 <FXCollections fx:factory="observableArrayList">
+      	 		<String fx:value="Ministry of Industry and Mining" />
+      	 		<String fx:value="Ministry of Health" />
+      	 		<String fx:value="Ministry of Commerce" />
+      	 		<String fx:value="Ministry of Agriculture" />
+      	 	</FXCollections>
+      	 </items>
+      </ChoiceBox>
+      <TextField fx:id="productTypeTF" layoutX="55.0" layoutY="102.0" promptText="Product type" />
+      <TextField fx:id="productNameTF" layoutX="55.0" layoutY="136.0" promptText="Product name" />
+      <TextField fx:id="manufacturerTF" layoutX="55.0" layoutY="169.0" promptText="Manufacturer" />
+      <TextField fx:id="producingCountryTF" layoutX="55.0" layoutY="203.0" promptText="Producing Country" />
+      <TextField fx:id="minPriceTF" layoutX="55.0" layoutY="271.0" promptText="Minimum price" />
+      <TextField fx:id="minNumberTF" layoutX="55.0" layoutY="304.0" promptText="Minimum number" />
+      <TextField fx:id="minWeightTF" layoutX="55.0" layoutY="336.0" promptText="Minimum weight" />
+      <ChoiceBox fx:id="wayCB" layoutX="260.0" layoutY="102.0" prefWidth="150.0">
+       <items>
+	      	 <FXCollections fx:factory="observableArrayList">
+      	 		<String fx:value="Overland" />
+      	 		<String fx:value="Airway" />
+      	 		<String fx:value="Seaway" />
+      	 	</FXCollections>
+      	 </items>
+	 </ChoiceBox>
+      <TextField fx:id="originCountryTF" layoutX="260.0" layoutY="136.0" promptText="Origin country" />
+      <DatePicker fx:id="dateFromDP" layoutX="260.0" layoutY="169.0" prefHeight="25.0" prefWidth="149.0" promptText="From" />
+      <DatePicker fx:id="dateTillDP" layoutX="260.0" layoutY="203.0" prefHeight="25.0" prefWidth="149.0" promptText="Till" />
+      <TextField fx:id="maxPriceTF" layoutX="261.0" layoutY="271.0" promptText="Maximum price" />
+      <TextField fx:id="maxNumberTF" layoutX="260.0" layoutY="304.0" promptText="Maximum Number" />
+      <TextField fx:id="maxWeightTF" layoutX="261.0" layoutY="337.0" prefHeight="25.0" prefWidth="149.0" promptText="Maximum weight" />
+      <Button fx:id="createLawBtn" layoutX="153.0" layoutY="379.0" mnemonicParsing="false" onAction="#createLawBtnClicked" prefHeight="25.0" prefWidth="149.0" text="Create Law" />
+   </children>
+</AnchorPane>
